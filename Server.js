@@ -2,8 +2,8 @@
 const { Telegraf } = require('telegraf');  // Telegram Bot library
 const admin = require('firebase-admin');   // Firebase Admin SDK
 
-// Initialize Firebase
-const serviceAccount = require('.// Import the functions you need from the SDKs you need
+// Initialize Firebase Admin SDK
+const serviceAccount = require('./firebase-credentials/serviceAccountKey.json');  /// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -24,7 +24,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);');  // Your Firebase credentials file
+const analytics = getAnalytics(app);/ Replace with the actual path to your Firebase service account key
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

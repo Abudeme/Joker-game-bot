@@ -74,3 +74,12 @@ bot.launch().then(() => {
 // Graceful shutdown on process termination
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
+require('dotenv').config(); // Load .env variables
+const { Telegraf } = require('telegraf');
+
+const bot = new Telegraf(process.env.BOT_TOKEN); // Access BOT_TOKEN from .env
+
+bot.start((ctx) => ctx.reply('Welcome to the game!')); // Start command
+bot.launch(); // Launch the bot
+
+console.log('Bot is running...');

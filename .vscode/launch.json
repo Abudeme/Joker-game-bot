@@ -1,0 +1,96 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run acorn",
+            "runtimeExecutable": "acorn",
+            "cwd": "${workspaceFolder}/joker-game",
+            "args": []
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run ansi-html",
+            "runtimeExecutable": "ansi-html",
+            "cwd": "${workspaceFolder}/joker-game",
+            "args": []
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run acorn",
+            "runtimeExecutable": "acorn",
+            "cwd": "${workspaceFolder}/joker-game",
+            "args": []
+        },
+        {
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Attach",
+            "port": 9229,
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run minifyProtoJson",
+            "runtimeExecutable": "minifyProtoJson",
+            "cwd": "${workspaceFolder}",
+            "args": []
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run telegraf",
+            "runtimeExecutable": "telegraf",
+            "cwd": "${workspaceFolder}",
+            "args": []
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Pytho Debugger: game_bot.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}"
+        },
+        {
+            "name": "Python Debugger: Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}"
+        }
+    ]
+}

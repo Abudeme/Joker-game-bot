@@ -1,0 +1,14 @@
+#config key
+ #config.key
+# Ignore environment files
+.env
+
+# Ignore Firebase credentials
+firebase-credentials/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore logs
+*.log
+.env

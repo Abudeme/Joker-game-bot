@@ -1,0 +1,27 @@
+"scripts": 
+  "scripts": {{ 
+  "name": 
+  "joker-game-bot", 
+  "version": 
+  "1.0.0", 
+  "description": 
+  "Telegram bot for 
+  the Joker Game 
+  using Firebase", 
+  "main": 
+  "server.js", 
+  "scripts": {
+    "start": "node 
+    server.js"  },
+  "author": "abudeme",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.11.0",
+    "dotenv": "^10.0.0",
+    "firebase": "^11.1.0",
+    "firebase-admin": "^13.0.2",
+    "google-gax": "^4.4.1",
+    "jq": "1.7.2",
+    "telegraf": "^4.0.0"
+  }
+}
